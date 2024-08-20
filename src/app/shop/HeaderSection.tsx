@@ -1,0 +1,24 @@
+import BreadCrumb from "@/components/BreadCrumb";
+import AppStrings from "@/constants/strings";
+import React from "react";
+
+const HeaderSection = () => {
+  return (
+    <div className="w-full p-4">
+      <div className="container mx-auto max-w-[1200px] bg-secondary rounded-md flex flex-col items-center text-center">
+        <BreadCrumb />
+        <h1 className="text-2xl md:text-4xl font-semibold text-black p-4">
+          {AppStrings.shop_page.header_section.head}
+          <span className="text-primary pl-2">
+            {AppStrings.shop_page.header_section.head_insight}
+          </span>
+        </h1>
+        <p className="text-black font-semibold text-base px-4 mb-8">
+          {AppStrings.shop_page.header_section.sub_head}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default HeaderSection;

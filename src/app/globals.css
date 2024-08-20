@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .row {
-  padding: 1 rem;
+.row {
+  /* padding: 1 rem;
   border: 1px solid red;
-  background-color: bisque;
-} */
+  background-color: bisque; */
+}
 
 .wrapper {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  min-height: 100vh; */
 }

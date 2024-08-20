@@ -48,6 +48,32 @@ const strings = {
       blog: "Blog",
     },
   },
+  shop_page: {
+    header_section: {
+      head: "Read and add your",
+      head_insight: "insight",
+      sub_head: "find your favorite book and read it here for free",
+    },
+  },
+  filter: {
+    book_category: {
+      head: "Books Category",
+      fiction: "Fiction",
+      non_fiction: "Non-Fiction",
+      children_books: "Children's Books",
+      educational_textbooks: "Educational & Textbooks",
+      graphic_novels_comics: "Graphic Novels & Comics",
+      religion_spirituality: "Religion & Spirituality",
+      arts_photography: "Arts & Photography",
+      special_collections: "Special Collections",
+    },
+    booking_rating: {
+      head: "Books Rating",
+    },
+    price_range: {
+      head: "Price Range",
+    },
+  },
 };
 
 export default strings;
