@@ -4,7 +4,7 @@ import React from "react";
 
 const HeaderSection = () => {
   return (
-    <div className="w-full p-4">
+    <div className="w-full">
       <div className="container mx-auto max-w-[1200px] bg-secondary rounded-md flex flex-col items-center text-center">
         <BreadCrumb />
         <h1 className="text-2xl md:text-4xl font-semibold text-black p-4">

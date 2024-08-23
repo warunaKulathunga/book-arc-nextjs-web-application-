@@ -23,6 +23,8 @@ const config: Config = {
         starSecondary: "#DEDEDE",
         imageBg: "#F2F2F2",
         darkGreen: "#108422",
+        pagination_button: "#F5F5F5",
+        pagination_disable_button: "#D9D9D9",
       },
     },
   },

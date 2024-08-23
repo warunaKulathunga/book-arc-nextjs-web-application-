@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import all_the_light from "./../../../public/image 1.png";
 import crawdads from "./../../../public/image 9.png";
@@ -9,8 +10,15 @@ import { FaStar } from "react-icons/fa";
 import { PiEyeFill } from "react-icons/pi";
 import { FaCartShopping } from "react-icons/fa6";
 import { PiTagSimpleFill } from "react-icons/pi";
+import AppString from "../../constants/strings";
+import { RiArrowDownSLine } from "react-icons/ri";
+import { TfiMenuAlt } from "react-icons/tfi";
+import { HiViewGrid } from "react-icons/hi";
+import Pagination from "@/components/Pagination";
 
 const BookList = () => {
+  const [showToggle, setToggle] = useState(false);
+
   const bookList = [
     {
       id: 1,
@@ -61,9 +69,48 @@ const BookList = () => {
     },
   ];
 
+  const toggleDropDown = () => {
+    setToggle(!showToggle);
+  };
+
   return (
-    <div className="grid grid-cols-3 gap-4 w-ful">
-      <div className="col-span-3">01</div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+      <div className="col-span-1 md:col-span-3 flex justify-between">
+        <div className="flex">
+          <p className="text-base font-normal text-subText">
+            {AppString.book_list.sort_by}
+          </p>
+          <div className="relative">
+            <div
+              onClick={toggleDropDown}
+              className="flex items-center gap-1 ml-2 text-base font-normal text-black select-none"
+            >
+              {AppString.book_list.best_match}
+              <RiArrowDownSLine size={22} />
+            </div>
+            <ul
+              className={`bg-white rounded absolute z-10 w-[150px] shadow-md text-center mt-1 ${showToggle ? "block" : "hidden"}`}
+            >
+              <li className="text-sm p-2 border-b font-normal text-black hover:bg-secondary">
+                {AppString.book_list.best_review}
+              </li>
+              <li className="text-sm p-2 border-b font-normal text-black hover:bg-secondary">
+                {AppString.book_list.top_rated}
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex gap-2 ">
+          <p className="text-base font-normal text-subText">
+            {AppString.book_list.view}
+          </p>
+          <div className="flex gap-2 items-center">
+            <HiViewGrid size={20} />
+            <TfiMenuAlt size={20} className="text-subText" />
+          </div>
+        </div>
+      </div>
       {bookList.map((book) => {
         return (
           <div key={book.id} className="bg-white shadow-md">
@@ -115,7 +162,9 @@ const BookList = () => {
           </div>
         );
       })}
-      <div className="col-span-3 bg-red-400">01</div>
+      <div className="col-span-1 md:col-span-3 flex justify-center mt-10 mb-20">
+        <Pagination />
+      </div>
     </div>
   );
 };

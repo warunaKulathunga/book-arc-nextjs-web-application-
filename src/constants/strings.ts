@@ -74,6 +74,13 @@ const strings = {
       head: "Price Range",
     },
   },
+  book_list: {
+    sort_by: "Sort By:",
+    best_match: "Best Match",
+    view: "View",
+    best_review: "Best Review",
+    top_rated: "Top Rated",
+  },
 };
 
 export default strings;

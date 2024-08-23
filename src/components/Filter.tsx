@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 
 const Filter = () => {
   return (
-    <div className="bg-white w-full">
+    <div className="bg-white w-full lg:border-r block md:flex lg:block md:gap-10 mb-10 md:mb-10 lg:mb-0">
       <ol>
         <li className="text-black text-base font-semibold">
           {AppStrings.filter.book_category.head}
@@ -82,7 +82,7 @@ const Filter = () => {
           {AppStrings.filter.book_category.special_collections}
         </li>
       </ol>
-      <ol className="mt-10">
+      <ol className="mt-10 md:mt-0 lg:mt-10">
         <li className="text-black text-base font-semibold">
           {AppStrings.filter.booking_rating.head}
         </li>
@@ -154,7 +154,7 @@ const Filter = () => {
             ))}
         </li>
       </ol>
-      <ol className="mt-10">
+      <ol className="mt-10 md:mt-0 lg:mt-10">
         <li className="text-black text-base font-semibold">
           {AppStrings.filter.price_range.head}
         </li>
