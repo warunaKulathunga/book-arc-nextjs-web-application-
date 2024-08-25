@@ -14,3 +14,58 @@
   justify-content: space-between;
   min-height: 100vh; */
 }
+
+.custom-checkbox {
+  appearance: none; /* Remove default checkbox styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1rem; /* Define checkbox size */
+  height: 1rem;
+  border: 2px solid #ccc; /* Default border */
+  border-radius: 0.25rem; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for better UX */
+  display: inline-block;
+  position: relative;
+  background-color: #fff; /* Default background color */
+  transition:
+    background-color 0.2s,
+    border-color 0.2s; /* Smooth transitions */
+}
+
+.custom-checkbox:checked {
+  background-color: #39dc53; /* Background color when checked */
+  border-color: #c1c1c1; /* Border color when checked */
+}
+
+.custom-checkbox:checked::after {
+  content: "✓"; /* Insert the checkmark symbol */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to be fully centered */
+  color: black; /* Color of the checkmark */
+  font-size: 0.75rem; /* Adjust size of the checkmark */
+  font-weight: bold;
+}
+
+.custom-ranger {
+  appearance: none;
+  background-color: #39dc53;
+  border-radius: 10px;
+  height: 3px;
+  cursor: pointer;
+}
+
+.custom-ranger:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+.custom-ranger::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Removes default thumb styling in WebKit browsers */
+  appearance: none; /* Removes default thumb styling in other browsers */
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  border-radius: 50%; /* Makes the thumb round */
+  background: #39dc53; /* Green thumb color */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}

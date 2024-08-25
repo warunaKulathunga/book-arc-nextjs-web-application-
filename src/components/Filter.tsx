@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import AppStrings from "@/constants/strings";
 import { FaStar } from "react-icons/fa";
@@ -9,75 +10,83 @@ const Filter = () => {
         <li className="text-black text-base font-semibold">
           {AppStrings.filter.book_category.head}
         </li>
-        <li className="text-subText text-base font-normal flex gap-3 mt-6">
+        <li className="text-sm font-normal flex gap-3 mt-6">
           <input
             type="checkbox"
             id="vehicle1"
             name="vehicle1"
             value="Bike"
-          ></input>
+            className="custom-checkbox"
+          />
           {AppStrings.filter.book_category.fiction}
         </li>
-        <li className="text-subText text-base font-normal flex gap-3 mt-2">
+        <li className="text-subText text-sm font-normal flex gap-3 mt-2">
           <input
             type="checkbox"
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {AppStrings.filter.book_category.non_fiction}
         </li>
-        <li className="text-subText text-base font-normal flex gap-3 mt-2">
+        <li className="text-subText text-sm font-normal flex gap-3 mt-2">
           <input
             type="checkbox"
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {AppStrings.filter.book_category.children_books}
         </li>
-        <li className="text-subText text-base font-normal flex gap-3 mt-2">
+        <li className="text-subText text-sm font-normal flex gap-3 mt-2">
           <input
             type="checkbox"
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {AppStrings.filter.book_category.educational_textbooks}
         </li>
-        <li className="text-subText text-base font-normal flex gap-3 mt-2">
+        <li className="text-subText text-sm font-normal flex gap-3 mt-2">
           <input
             type="checkbox"
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {AppStrings.filter.book_category.graphic_novels_comics}
         </li>
-        <li className="text-subText text-base font-normal flex gap-3 mt-2">
+        <li className="text-subText text-sm font-normal flex gap-3 mt-2">
           <input
             type="checkbox"
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {AppStrings.filter.book_category.religion_spirituality}
         </li>
-        <li className="text-subText text-base font-normal flex gap-3 mt-2">
+        <li className="text-subText text-sm font-normal flex gap-3 mt-2">
           <input
             type="checkbox"
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {AppStrings.filter.book_category.arts_photography}
         </li>
-        <li className="text-subText text-base font-normal flex gap-3 mt-2">
+        <li className="text-subText text-sm font-normal flex gap-3 mt-2">
           <input
             type="checkbox"
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {AppStrings.filter.book_category.special_collections}
         </li>
@@ -92,6 +101,7 @@ const Filter = () => {
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {Array(5)
             .fill(0)
@@ -105,6 +115,7 @@ const Filter = () => {
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {Array(5)
             .fill(0)
@@ -123,6 +134,7 @@ const Filter = () => {
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {Array(5)
             .fill(0)
@@ -141,6 +153,7 @@ const Filter = () => {
             id="vehicle1"
             name="vehicle1"
             value="Bike"
+            className="custom-checkbox"
           ></input>
           {Array(5)
             .fill(0)
@@ -159,7 +172,17 @@ const Filter = () => {
           {AppStrings.filter.price_range.head}
         </li>
         <li className="mt-3">
-          <input type="range" id="vol" name="vol" min="0" max="50" />
+          <input
+            type="range"
+            id="vol"
+            name="vol"
+            min="0"
+            max="50"
+            className="custom-ranger"
+          />
+        </li>
+        <li className="mt-5">
+          <p className="text-subText text-sm">$0.00 - $1500.00</p>
         </li>
       </ol>
     </div>

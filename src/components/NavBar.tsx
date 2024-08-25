@@ -26,40 +26,29 @@ const NavBar = () => {
             height={120}
             width={142}
           />
-          <PiLineVerticalThin
-            size={24}
-            className="text-subText hidden md:block "
-          />
-          <IoEllipsisHorizontal
-            size={24}
-            className="text-black hidden md:block"
-          />
-          <p className="text-black font-medium text-sm  hidden">
-            {AppString.navbar.category}
-          </p>
         </div>
         <div className="hidden md:flex">
           <ul className="flex items-center gap-4 mr-4">
-            <li className="text-subText font-medium text-sm">
+            <li className="text-subText font-medium text-sm cursor-pointer hover:text-black select-none hover:border-b-[2px] border-primary p-1">
               {AppString.navbar.home.header}
             </li>
-            <li className="text-subText font-medium text-sm">
+            <li className="text-subText font-medium text-sm cursor-pointer hover:text-black select-none hover:border-b-[2px] border-primary p-1">
               {AppString.navbar.shop.header}
             </li>
-            <li className="text-subText font-medium text-sm">
+            <li className="text-subText font-medium text-sm cursor-pointer hover:text-black select-none hover:border-b-[2px] border-primary p-1">
               {AppString.navbar.about.header}
             </li>
-            <li className="text-subText font-medium text-sm">
+            <li className="text-subText font-medium text-sm cursor-pointer hover:text-black select-none hover:border-b-[2px] border-primary p-1">
               {AppString.navbar.contact.header}
             </li>
           </ul>
           <div className="flex items-center gap-4">
-            <CiSearch size={16} className="text-black" />
-            <BsCart2 size={16} className="text-black" />
-            <button className="bg-secondaryButton text-black w-[100px] py-3 font-bold px-6 mx-auto rounded-lg text-xs">
+            <CiSearch size={16} className="text-black cursor-pointer" />
+            <BsCart2 size={16} className="text-black cursor-pointer" />
+            <button className="bg-secondaryButton text-black w-[100px] py-3 font-bold px-6 mx-auto rounded-lg text-xs select-none">
               {AppString.button.signIn}
             </button>
-            <button className="bg-primary text-black font-bold w-[100px] text-xs px-6 py-3 mx-auto rounded-lg">
+            <button className="bg-primary text-black font-bold w-[100px] text-xs px-6 py-3 mx-auto rounded-lg select-none">
               {AppString.button.register}
             </button>
           </div>
@@ -71,8 +60,8 @@ const NavBar = () => {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 bg-white w-[80%] md:[60%] h-full shadow-lg ease-in-out duration-500  md:hidden"
-            : "ease-in-out duration-500 fixed left-[-100%]  md:hidden"
+            ? "fixed left-0 top-0 bg-white w-[80%] md:[60%] h-full shadow-lg ease-in-out duration-[700ms]  md:hidden z-10"
+            : "ease-in-out duration-[700ms] fixed left-[-100%] md:hidden z-10 h-full shadow-lg top-0"
         }
       >
         <div className="flex p-4">
@@ -82,21 +71,19 @@ const NavBar = () => {
             height={120}
             width={142}
           />
-          <PiLineVerticalThin size={24} className="text-subText" />
-          <IoEllipsisHorizontal size={24} className="text-black" />
         </div>
         <div>
           <ul className="mt-10">
-            <li className="text-subText font-medium text-sm p-4 border-b border-gray-600">
+            <li className="text-subText font-medium text-sm p-4 border-b border-gray-300 cursor-pointer hover:text-black select-none">
               {AppString.navbar.home.header}
             </li>
-            <li className="text-subText font-medium text-sm p-4 border-b border-gray-600">
+            <li className="text-subText font-medium text-sm p-4 border-b border-gray-300 cursor-pointer hover:text-black select-none">
               {AppString.navbar.shop.header}
             </li>
-            <li className="text-subText font-medium text-sm p-4 border-b border-gray-600">
+            <li className="text-subText font-medium text-sm p-4 border-b border-gray-300 cursor-pointer hover:text-black select-none">
               {AppString.navbar.about.header}
             </li>
-            <li className="text-subText font-medium text-sm p-4 border-b border-gray-600">
+            <li className="text-subText font-medium text-sm p-4 border-b border-gray-300 cursor-pointer hover:text-black select-none">
               {AppString.navbar.contact.header}
             </li>
           </ul>

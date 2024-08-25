@@ -25,6 +25,7 @@ const config: Config = {
         darkGreen: "#108422",
         pagination_button: "#F5F5F5",
         pagination_disable_button: "#D9D9D9",
+        footerText: "#7B7B7B",
       },
     },
   },

@@ -74,16 +74,16 @@ const BookList = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 w-full">
       <div className="col-span-1 md:col-span-3 flex justify-between">
         <div className="flex">
-          <p className="text-base font-normal text-subText">
+          <p className="text-sm font-normal text-subText">
             {AppString.book_list.sort_by}
           </p>
           <div className="relative">
             <div
               onClick={toggleDropDown}
-              className="flex items-center gap-1 ml-2 text-base font-normal text-black select-none"
+              className="flex items-center gap-1 ml-2 text-sm font-normal text-black select-none"
             >
               {AppString.book_list.best_match}
               <RiArrowDownSLine size={22} />
@@ -91,10 +91,10 @@ const BookList = () => {
             <ul
               className={`bg-white rounded absolute z-10 w-[150px] shadow-md text-center mt-1 ${showToggle ? "block" : "hidden"}`}
             >
-              <li className="text-sm p-2 border-b font-normal text-black hover:bg-secondary">
+              <li className="text-sm p-2 border-b font-normal text-black hover:bg-secondary cursor-pointer">
                 {AppString.book_list.best_review}
               </li>
-              <li className="text-sm p-2 border-b font-normal text-black hover:bg-secondary">
+              <li className="text-sm p-2 border-b font-normal text-black hover:bg-secondary cursor-pointer">
                 {AppString.book_list.top_rated}
               </li>
             </ul>
@@ -106,14 +106,17 @@ const BookList = () => {
             {AppString.book_list.view}
           </p>
           <div className="flex gap-2 items-center">
-            <HiViewGrid size={20} />
-            <TfiMenuAlt size={20} className="text-subText" />
+            <HiViewGrid size={20} className="cursor-pointer" />
+            <TfiMenuAlt size={20} className="text-subText cursor-pointer" />
           </div>
         </div>
       </div>
       {bookList.map((book) => {
         return (
-          <div key={book.id} className="bg-white shadow-md">
+          <div
+            key={book.id}
+            className="bg-white shadow-md hover:shadow-lg cursor-pointer"
+          >
             <div className="bg-imageBg flex justify-center h-[285px] relative">
               <Image
                 src={book.image}
@@ -124,24 +127,36 @@ const BookList = () => {
               />
               <div className="flex flex-col gap-4 p-4 absolute right-0 top-14">
                 <div className="bg-white h-[32px] w-[32px] rounded-full flex items-center justify-center shadow-md">
-                  <PiEyeFill height={18} width={18} />
+                  <PiEyeFill
+                    height={18}
+                    width={18}
+                    className="cursor-pointer"
+                  />
                 </div>
                 <div className="bg-white h-[32px] w-[32px] rounded-full flex items-center justify-center shadow-md">
-                  <FaCartShopping height={18} width={18} />
+                  <FaCartShopping
+                    height={18}
+                    width={18}
+                    className="cursor-pointer"
+                  />
                 </div>
                 <div className="bg-white h-[32px] w-[32px] rounded-full flex items-center justify-center shadow-md">
-                  <PiTagSimpleFill height={18} width={18} />
+                  <PiTagSimpleFill
+                    height={18}
+                    width={18}
+                    className="cursor-pointer"
+                  />
                 </div>
               </div>
             </div>
             <div className="p-4">
-              <h6 className="text-lg capitalize font-semibold text-black">
+              <h6 className="text-lg capitalize font-[500px] text-black">
                 {book.name}
               </h6>
-              <p className="text-base capitalize font-normal text-subText mt-3">
+              <p className="text-base capitalize font-[500ox] text-subText mt-3">
                 {book.author}
               </p>
-              <p className="text-lg text-darkGreen font-semibold mt-5">
+              <p className="text-lg text-darkGreen font-[500px] mt-5">
                 {book.price}
               </p>
               <div className="flex gap-2 mt-2">
