@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../(components)/Button";
 import HeaderSection from "./HeaderSection";
 import Filter from "@/components/Filter";
 import BookList from "./BookList";
@@ -8,9 +7,6 @@ const page = () => {
   return (
     <div className="w-full px-4">
       <div className="mx-auto max-w-[1200px]">
-        {/* <HeaderSection />
-      <Filter />
-      <BookList /> */}
         <div>
           <HeaderSection />
         </div>

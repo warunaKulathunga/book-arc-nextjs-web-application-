@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.row {
-  /* padding: 1 rem;
-  border: 1px solid red;
-  background-color: bisque; */
-}
-
-.wrapper {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh; */
-}
-
 .custom-checkbox {
   appearance: none; /* Remove default checkbox styles */
   -webkit-appearance: none;

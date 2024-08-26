@@ -17,6 +17,8 @@ const strings = {
   button: {
     signIn: "Sign In",
     register: "Register",
+    buyNow: "Buy now",
+    addToCart: "Add to cart",
   },
   footer: {
     header: "Subscribe Now!",
@@ -80,6 +82,21 @@ const strings = {
     view: "View",
     best_review: "Best Review",
     top_rated: "Top Rated",
+  },
+  book_detail: {
+    publish: "Publish ;",
+    category: "Category",
+    lifetime_access: "Lifetime Access",
+    share: "Share :",
+  },
+  book_details_nav: {
+    description: "Description",
+    additional: "Additional",
+    review: "Review",
+    video: "Video",
+  },
+  related_products: {
+    header: "Related Products",
   },
 };
 
