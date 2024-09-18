@@ -156,7 +156,7 @@ const BookList = () => {
               <p className="text-base capitalize font-[500ox] text-subText mt-3">
                 {book.author}
               </p>
-              <p className="text-lg text-darkGreen font-[500px] mt-5">
+              <p className="text-lg text-darkGreen font-medium mt-5">
                 {book.price}
               </p>
               <div className="flex gap-2 mt-2">

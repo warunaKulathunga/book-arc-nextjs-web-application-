@@ -19,6 +19,8 @@ const strings = {
     register: "Register",
     buyNow: "Buy now",
     addToCart: "Add to cart",
+    checkout: "Proceed to checkout",
+    apply: "Apply",
   },
   footer: {
     header: "Subscribe Now!",
@@ -54,7 +56,7 @@ const strings = {
     header_section: {
       head: "Read and add your",
       head_insight: "insight",
-      sub_head: "find your favorite book and read it here for free",
+      sub_head: "Find your favorite book and read it here for free",
     },
   },
   filter: {
@@ -97,6 +99,30 @@ const strings = {
   },
   related_products: {
     header: "Related Products",
+  },
+  cart_page: {
+    header_section: {
+      header_sec_one: "Your",
+      header_sec_two: "Digital",
+      header_sec_three: "Bookshelf",
+      sub_header:
+        "Explore, Purchase, and Enjoy Your Favourite Ebooks Anytime, Anywhere",
+    },
+    total_section: {
+      sub_total: "Subtotal :",
+      totals: "Totals :",
+      description: "Shipping & taxes calculated at checkout",
+    },
+  },
+  check_out_page: {
+    billing_details: {
+      header: "Billing Details",
+      first_name: "First Name",
+      last_name: "Last Name",
+      email_add: "Email Address",
+      mobile_num: "Mobile Number",
+      country: "Country",
+    },
   },
 };
 
