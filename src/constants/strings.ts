@@ -123,6 +123,9 @@ const strings = {
       mobile_num: "Mobile Number",
       country: "Country",
     },
+    order_summary: {
+      headers: "Order Summary",
+    },
   },
 };
 

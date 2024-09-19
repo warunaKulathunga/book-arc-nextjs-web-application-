@@ -8,10 +8,10 @@ const page = () => {
     <div className="w-full">
       <div className="max-w-[1200px] mx-auto">
         <div className="flex">
-          <div className="w-[75%]">
+          <div className="w-[70%]">
             <BillingDetails />
           </div>
-          <div className="w-[25%]">
+          <div className="w-[30%]">
             <OrderSummary />
           </div>
         </div>
