@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import allTheLight from "./../../../../../public/image_10.png";
@@ -6,8 +7,10 @@ import AppStrings from "@/constants/strings";
 import { BiLogoFacebook } from "react-icons/bi";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { FaTwitter } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const BookDetail = () => {
+  const router = useRouter();
   const bookDetails = {
     id: 1,
     image: allTheLight,
@@ -74,7 +77,10 @@ const BookDetail = () => {
             </div>
           </div>
           <div className="mt-8">
-            <button className="bg-primary text-black font-medium text-sm px-6 py-2 mx-auto rounded-lg">
+            <button
+              className="bg-primary text-black font-medium text-sm px-6 py-2 mx-auto rounded-lg"
+              onClick={() => router.push("/cart")}
+            >
               {AppStrings.button.buyNow}
             </button>
             <button className="bg-secondaryButton text-black py-2 font-medium px-6 mx-auto rounded-lg text-sm ml-2">

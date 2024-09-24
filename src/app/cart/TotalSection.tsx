@@ -1,8 +1,11 @@
+"use client";
 import React from "react";
 import AppStrings from "@/constants/strings";
 import { FcOk } from "react-icons/fc";
+import { useRouter } from "next/navigation";
 
 const TotalSection = () => {
+  const router = useRouter();
   return (
     <div className="w-full mb-4">
       <div className="max-w-[1200px] bg-secondary rounded-md p-4 shadow">
@@ -24,7 +27,10 @@ const TotalSection = () => {
             {AppStrings.cart_page.total_section.description}
           </p>
         </div>
-        <button className="bg-primary text-black font-semibold text-sm px-6 py-2 rounded-lg w-[100%]">
+        <button
+          className="bg-primary text-black font-semibold text-sm px-6 py-2 rounded-lg w-[100%]"
+          onClick={() => router.push("/checkout")}
+        >
           {AppStrings.button.checkout}
         </button>
       </div>

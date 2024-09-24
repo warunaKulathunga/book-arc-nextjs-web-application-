@@ -29,6 +29,8 @@ const config: Config = {
         footerText: "#7B7B7B",
         subTotalHeader: "#656666",
         subTotalValue: "#646464",
+        paymentSubText: "#909090",
+        disableText: "#ACACAC",
       },
     },
   },

@@ -2,15 +2,15 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "./../../public/LOGO.png";
-import { IoEllipsisHorizontal } from "react-icons/io5";
-import { PiLineVerticalThin } from "react-icons/pi";
 import AppString from "./../constants/strings";
 import { CiSearch } from "react-icons/ci";
 import { BsCart2 } from "react-icons/bs";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { useRouter } from "next/navigation";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const router = useRouter();
 
   const handleNav = () => {
     setNav(!nav);
@@ -32,7 +32,10 @@ const NavBar = () => {
             <li className="text-subText font-medium text-sm cursor-pointer hover:text-black select-none hover:border-b-[2px] border-primary p-1">
               {AppString.navbar.home.header}
             </li>
-            <li className="text-subText font-medium text-sm cursor-pointer hover:text-black select-none hover:border-b-[2px] border-primary p-1">
+            <li
+              className="text-subText font-medium text-sm cursor-pointer hover:text-black select-none hover:border-b-[2px] border-primary p-1"
+              onClick={() => router.push("/shop")}
+            >
               {AppString.navbar.shop.header}
             </li>
             <li className="text-subText font-medium text-sm cursor-pointer hover:text-black select-none hover:border-b-[2px] border-primary p-1">

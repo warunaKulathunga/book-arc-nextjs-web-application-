@@ -21,6 +21,7 @@ const strings = {
     addToCart: "Add to cart",
     checkout: "Proceed to checkout",
     apply: "Apply",
+    pay: "Pay $",
   },
   footer: {
     header: "Subscribe Now!",
@@ -116,6 +117,7 @@ const strings = {
   },
   check_out_page: {
     billing_details: {
+      main_header: "Pay Now!",
       header: "Billing Details",
       first_name: "First Name",
       last_name: "Last Name",
@@ -125,6 +127,14 @@ const strings = {
     },
     order_summary: {
       headers: "Order Summary",
+    },
+    payment_method: {
+      header: "Payment method",
+      card_number: "Card Number",
+      expiration_date: "Expiration Date",
+      cvv: "CVV",
+      description:
+        "Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.",
     },
   },
 };

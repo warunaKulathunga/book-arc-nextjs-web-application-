@@ -3,6 +3,7 @@ import all_the_light from "./../../../public/image 1.png";
 import crawdads from "./../../../public/image 9.png";
 import konspirasi from "./../../../public/image 15.png";
 import Image from "next/image";
+import CouponCode from "../cart/CouponCode";
 
 const OrderSummary = () => {
   const bookList = [
@@ -34,19 +35,19 @@ const OrderSummary = () => {
 
   return (
     <div className="w-full">
-      <div className="max-w-[1200px]">
-        {/* <p></p> */}
+      <div className="max-w-[1200px] p-5 bg-imageBg rounded-lg">
+        <p className="font-medium">Order Summary</p>
         {bookList.map((item) => {
           return (
             <>
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center mt-4 border-b-2 pb-3">
                 <div className="flex text-sm items-center w-60">
                   <Image
                     src={item.image}
                     alt="Picture of the author"
                     height={40}
                     width={60}
-                    className="shadow-sm object-cover mr-3 bg-imageBg rounded px-2"
+                    className="shadow-sm object-cover mr-3 bg-white rounded px-2"
                   />
                   {item.product_name}
                 </div>
@@ -55,6 +56,17 @@ const OrderSummary = () => {
             </>
           );
         })}
+        <div className="mt-4 border-b-2">
+          <CouponCode />
+        </div>
+        <div className="flex justify-between pt-4 pb-4 border-b">
+          <p className="text-subTotalHeader font-medium">Subtotals:</p>
+          <p className="font-medium">$ 59.98</p>
+        </div>
+        <div className="flex justify-between pt-4 pb-4 border-b">
+          <p className="font-medium">Totals:</p>
+          <p className="font-semibold text-primary">$ 59.98</p>
+        </div>
       </div>
     </div>
   );

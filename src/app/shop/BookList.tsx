@@ -15,9 +15,11 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { HiViewGrid } from "react-icons/hi";
 import Pagination from "@/components/Pagination";
+import { useRouter } from "next/navigation";
 
 const BookList = () => {
   const [showToggle, setToggle] = useState(false);
+  const router = useRouter();
 
   const bookList = [
     {
@@ -116,6 +118,7 @@ const BookList = () => {
           <div
             key={book.id}
             className="bg-white shadow-md hover:shadow-lg cursor-pointer"
+            onClick={() => router.push("/shop/book/1")}
           >
             <div className="bg-imageBg flex justify-center h-[285px] relative">
               <Image

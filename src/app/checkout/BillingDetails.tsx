@@ -5,7 +5,12 @@ const BillingDetails = () => {
   return (
     <div className="grid grid-cols-2 gap-4">
       <div className="col-span-2">
-        <p className="text-xl font-semibold mb-4">
+        <p className="text-xl font-bold mb-4">
+          {AppStrings.check_out_page.billing_details.main_header}
+        </p>
+      </div>
+      <div className="col-span-2">
+        <p className="text-xl font-medium mb-4">
           {AppStrings.check_out_page.billing_details.header}
         </p>
       </div>
