@@ -6,7 +6,7 @@ import CouponCode from "./CouponCode";
 
 const page = () => {
   return (
-    <div className="w-full px-4">
+    <div className="w-full px-4 mt-5">
       <div className="mx-auto max-w-[1200px]">
         <div>
           <HeaderSection />

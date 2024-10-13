@@ -12,7 +12,10 @@ const Footer = () => {
     <footer className="w-full bg-secondary">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 px-4 py-16">
         <div className="col-span-0 lg:col-span-2">
-          <Image src={logo} alt="Picture of the author" className="mt-4" />
+          {/* <Image src={logo} alt="Picture of the author" className="mt-4" /> */}
+          <h1 className="font-bold text-3xl">
+            Boo<span className="text-primary">K</span>
+          </h1>
           <p className="text-black font-normal text-sm mt-10">
             {AppString.footer.header}
           </p>

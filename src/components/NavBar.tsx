@@ -20,12 +20,15 @@ const NavBar = () => {
     <div className="w-full px-4">
       <nav className="bg-white h-20 max-w-[1200px] flex mx-auto justify-between">
         <div className="flex items-center gap-2">
-          <Image
+          {/* <Image
             src={logo}
             alt="Picture of the author"
             height={120}
             width={142}
-          />
+          /> */}
+          <h1 className="font-bold text-3xl">
+            Boo<span className="text-primary">K</span>
+          </h1>
         </div>
         <div className="hidden md:flex">
           <ul className="flex items-center gap-4 mr-4">
@@ -68,12 +71,13 @@ const NavBar = () => {
         }
       >
         <div className="flex p-4">
-          <Image
+          {/* <Image
             src={logo}
             alt="Picture of the author"
             height={120}
             width={142}
-          />
+          /> */}
+          <h1 className="font-bold text-3xl">Book</h1>
         </div>
         <div>
           <ul className="mt-10">
